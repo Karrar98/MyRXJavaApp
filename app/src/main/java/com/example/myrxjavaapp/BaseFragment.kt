@@ -20,7 +20,6 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setup()
-        addCallBack()
     }
 
     override fun onCreateView(
@@ -33,7 +32,6 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment(){
     }
 
     abstract  fun setup()
-    abstract  fun addCallBack()
 
     protected fun log(value : String) = Log.d(LOG_TAG, value)
 }

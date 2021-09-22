@@ -13,9 +13,6 @@ class BottomFragment : BaseFragment<FragmentBottomBinding>() {
     override fun setup() {
     }
 
-    override fun addCallBack() {
-    }
-
     fun setInputData(input: String) {
         binding?.txtShow?.text = input
     }
